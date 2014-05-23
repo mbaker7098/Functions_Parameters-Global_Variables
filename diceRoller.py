@@ -10,15 +10,22 @@ s6 = "- - - - -\n| O   O |\n| O   O |\n| O   O |\n- - - - -\n"
 
 def roll():
     print("rolling.....")
-    roll = random.randint(1,6)
+    roll = random.randint(1,6) #generates a random number between 1 -6
     time.sleep(1)
     print(roll)
-    return roll
+    return roll#returns the roll variable to the main function
    
+def until_six(roll):#functions 
+    while roll != 6:
+        print(roll)
+        time.sleep(1)
+        if roll == 6:
+            print("it reached a 6!!")
+            break #stops the loops
 
-def show_dice(roll):
+def show_dice(roll):#carries the roll variable to this function
     print(roll)
-    if roll == 1:
+    if roll == 1:#prints the side of the dice corrosponding number (1 would be s1)
         print(s1)
     elif roll == 2:
         print(s2)
