@@ -16,7 +16,9 @@ def roll():
     return roll#returns the roll variable to the main function
    
 def until_six(roll):#functions 
+    roll = 0
     while roll != 6:
+        roll = random.randint(1,6)
         print(roll)
         time.sleep(1)
         if roll == 6:
